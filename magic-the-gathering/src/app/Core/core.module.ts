@@ -3,7 +3,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { Constants } from '../Config/constants'
+import { Constants } from '../Config/constants';
+import { ApiHttpService } from './services/api-http.service';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { Constants } from '../Config/constants'
     CommonModule
   ],
   providers: [
-    Constants
+    Constants,
+    ApiHttpService,
   ],
 })
 export class CoreModule { }
