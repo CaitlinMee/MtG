@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { HttpMtGService } from './http-mt-g.service';
+import { HttpSetsService } from './http-sets.service';
 
 describe('HttpMtGService', () => {
-  let service: HttpMtGService;
+  let service: HttpSetsService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(HttpMtGService);
+    service = TestBed.inject(HttpSetsService);
   });
 
   it('should be created', () => {
