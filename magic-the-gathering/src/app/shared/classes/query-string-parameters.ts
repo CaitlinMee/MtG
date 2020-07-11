@@ -1,6 +1,6 @@
 //https://medium.com/better-programming/angular-api-calls-the-right-way-264198bf2c64
 
-export class QueryStringParamters {
+export class QueryStringParameters {
     private paramsAndValues: string[];
 
     constructor() {

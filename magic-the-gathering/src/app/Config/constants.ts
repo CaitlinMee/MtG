@@ -5,6 +5,6 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class Constants {
-    public readonly API_ENDPOINT: string = 'magicthegathering/api';
-    public readonly API_MOCK_ENDPOINT: string = 'mock-magicthegathering/api';
+    public readonly API_ENDPOINT: string = 'magicthegathering/v1/';
+    public readonly API_MOCK_ENDPOINT: string = 'mock-magicthegathering/v1';
 }
