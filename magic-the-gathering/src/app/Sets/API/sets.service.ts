@@ -20,6 +20,17 @@ export class SetsService {
 
   public getSetsbyId(id: number){}
 
-  public getSets(url?: string){}
+  public getSets(url?: string){
+    return this.httpClient.get<Sets[]>('${this.apiURL}')
+  }
+
+  public firstpage: string = "";
+  public prevpage: string = "";
+  public nextpage: string = "";
+  public lastpage: string = "";
+
+  public getSet(){
+    return this.httpClient.get<Sets[]>('${this.apiURL}')
+  }
 
 }
