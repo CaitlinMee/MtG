@@ -1,7 +1,7 @@
 //https://www.pluralsight.com/guides/posting-deleting-putting-data-angular
 
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
@@ -10,8 +10,9 @@ import { Observable, of } from 'rxjs';
 export class HttpSetsService {
   url: string;
 
-  constructor(private httpClient:HttpClient) {
-  this.url = "https://api.magicthegathering.io"
+  constructor(
+    private httpClient:HttpClient) {
+  this.url = "https://api.magicthegathering.io/v1/sets"
   }
 
   public getSets(){

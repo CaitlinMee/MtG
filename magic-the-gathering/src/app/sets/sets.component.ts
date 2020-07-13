@@ -12,8 +12,7 @@ export class SetsComponent implements OnInit {
   constructor(private setsService: HttpSetsService) { }
 
   getSets(): void {
-    this.setsService.getSets()
-      .subscribe(sets => this.sets = sets);
+    this.setsService.getSets();
   }
 
   ngOnInit(): void {
